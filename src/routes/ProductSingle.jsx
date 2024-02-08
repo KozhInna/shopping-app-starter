@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../store/cartSlice";
 
-const Product = (props) => {
+const ProductSingle = (props) => {
   const { title, price, description, image, rating } = props;
   const product = props;
   const dispatch = useDispatch();
@@ -30,4 +30,4 @@ const Product = (props) => {
     </Card>
   );
 };
-export default Product;
+export default ProductSingle;
